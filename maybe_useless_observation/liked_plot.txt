@@ -1,0 +1,16 @@
+When you look at x=3 at image, you can observe that it got almost perfect value.
+
+this is meaning that adding noise to the circuit ___may___ make the measurement more accurate than using ZNE error mitigation method or maybe any error mitigation method.
+I don't know if this helps or not but maybe it's a good observation or useless
+
+params of mitigate_circuit() for this result:
+    circuit = GHZ_state_circuit(),
+    base_error_probability = 0.1,
+    range_start: int = 1,
+    range_end: int = 5
+
+noise levels making way:
+    x = arange(range_start, range_end + 1) * base_error_probability
+    y = map(create_bit_flip_noise, x)
+
+this is meaning that when noise factor is 3, then x = 3 * 0.1 = 0.3

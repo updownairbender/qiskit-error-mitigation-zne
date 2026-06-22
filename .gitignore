@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Project Generated Assets (ZNE Plots)
+plots/
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
