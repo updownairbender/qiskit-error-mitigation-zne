@@ -9,9 +9,6 @@ venv/
 env/
 ENV/
 
-# Project Generated Assets (ZNE Plots)
-plots/
-
 # IDEs and Editors
 .vscode/
 .idea/

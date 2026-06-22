@@ -105,9 +105,7 @@ def generate_zne_plot(X: list[list[float]], y: list[float], model: LinearRegress
     # Construct final file destination path safely and save
     save_path = os.path.join(output_dir, filename)
     plt.savefig(save_path, dpi=300, bbox_inches='tight')
-
-    # for inline view
-    return fig
+    plt.close()
 
 
 def mitigate_circuit(circuit: QuantumCircuit, base_error_probability: float, range_start: int = 1, range_end: int = 5) -> float:
